@@ -43,6 +43,9 @@ namespace PluralsightCosmosDb
                 {"DO", DocumentsDemo.Run},
                 {"IX", IndexingDemo.Run},
                 {"UP", UsersAndPermissionsDemo.Run},
+                {"SP", StoredProceduresDemo.Run},
+                {"TR", TriggersDemo.Run},
+                {"UF", UserDefinedFunctionsDemo.Run},
                 {"C", Cleanup.Run}
             };
 
@@ -75,12 +78,18 @@ namespace PluralsightCosmosDb
         private static void ShowMenu()
         {
             Console.WriteLine(@"Cosmos DB SQL API .NET SDK demos
-
+===============================================
 DB Databases
 CO Collections
 DO Documents
 IX Indexing
 UP Users & Permissions
+
+Cosmos DB SQL API Server-Side Programming demos
+===============================================
+SP Stored procedures
+TR Triggers
+UF User defined functions
 
 C  Cleanup
 
